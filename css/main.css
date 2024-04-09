@@ -54,10 +54,11 @@ h2 {
 
 .btn-primary {
     --bs-btn-font-weight: 600;
-    --bs-btn-bg:var(--bs-primary);
+    --bs-btn-color: var(--bs-primary);
+    --bs-btn-bg:var(--bs-light);
     --bs-btn-border-color:var(--bs-primary);
     --bs-btn-hover-bg: var(--bs-primary);
-    --bs-btn-hover-border-color: var(--bs-primary);
+    --bs-btn-hover-border-color: var(--bs-light);
     --bs-btn-active-bg: var(--bs-primary);
     --bs-btn-active-border-color: var(--bs-primary)e;
     --bs-btn-disabled-bg:var(--bs-primary);
@@ -86,7 +87,48 @@ h2 {
     --bs-btn-hover-bg: var(--bs-info);
     --bs-btn-hover-border-color: var(--bs-light);
     --bs-btn-active-bg: var(--bs-info);
-    --bs-btn-active-border-color: var(--bs-dark)e;
+    --bs-btn-active-border-color: var(--bs-light)e;
+    --bs-btn-active-color: var(--bs-light);
     --bs-btn-disabled-bg:var(--bs-primary);
     --bs-btn-disabled-border-color:var(--bs-primary);
+}
+
+main {
+    color: aliceblue;
+    
+}
+
+/* adding style to contact form */
+
+.contact-form {
+  background-image: url(../images/Purple\ space.jpg);
+  max-width: 1200px;
+  margin: 0 auto;
+  border-style: solid;
+  border-color: var(--bs-info);
+}
+.contact-form {
+    padding: 2%;
+}
+
+/* adding modifications for social media */
+
+.social-media {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 30px;
+    text-align: center;
+    background-image: url(../images/Purple\ space.jpg);
+    padding-bottom: 30px;
+    border-radius: 30px;
+}
+
+.social-media { 
+    border-style: solid;
+    border-color: var(--bs-info);
+}
+
+h3{
+    padding: 2%;
+    text-align: center;
 }
