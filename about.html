@@ -58,7 +58,13 @@
             <div class="container-md">
                 <div class="row">
                     <div class="col-12 col-lg-6">
-                        <img src="images/picture-of-me.jpg" alt="image of me" width="100%">
+                        <picture>
+                            <source srcset="images/picture-of-me-636_x_425.jpg" media="(min-width:1400px)">
+                            <source srcset="images/picture-of-me-456_x_510.jpg" media="(min-width:990px)">
+                            <source srcset="images/picture-of-me-696_x_465.jpg" media="(min-width:768px)" />
+                            <source srcset="images/picture-of-me-366_x_245.jpg" media="(min-width:300px)" />
+                            <img src="images/picture-of-me-636_x_425.jpg" alt="Image of Anthony">
+                        </picture>
                     </div>
                     <div class="col-12 col-lg-6">
                        <p class="text-lg"> My name is Anthony and I am an Interactive Media Design student at Algonquin College. I
