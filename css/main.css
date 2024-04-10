@@ -8,14 +8,11 @@ body {
 }
 
 .banner {
-    background-image: url(../images/Purple\ space.jpg);
+    background-image: url(../images/Purple-space.jpg);
    
 }
 
-.floating-astronaut{
-    max-width: 800px;
-    margin: 0 auto;  
-}
+
 
 h2 {
     text-align: center;
@@ -100,7 +97,7 @@ main {
 /* adding style to contact form */
 
 .contact-form {
-  background-image: url(../images/Purple\ space.jpg);
+  background-image: url(../images/Purple-space.jpg);
   max-width: 1200px;
   margin: 0 auto;
   border-style: solid;
@@ -134,6 +131,11 @@ h3{
 
 /* Styling about us section */
 
+
+.text-lg {
+    font-size: 20px;
+}
+
 .rocket-ship {
     max-width: 1200px;
     margin: 0 auto;
@@ -149,7 +151,7 @@ h3{
     background-image: url(../images/Purple\ space.jpg);
 }
 
-    @keyframes moveAround { 
+    @keyframes flying { 
         0%{
             transform: translate(0,0);
           
@@ -166,7 +168,7 @@ h3{
    
 
 .rocket-ship {
-    animation: moveAround 8s ease-in-out; 
+    animation: flying 8s ease-in-out; 
 	animation-iteration-count: infinite;
 }
 
@@ -175,7 +177,7 @@ h3{
         transform: translateY(0);
       }
       50% {
-        transform: translateY(-20px);
+        transform: translateY(-40px) rotate(4deg);
       }
 
       100% {
@@ -185,11 +187,81 @@ h3{
     }
 
     .floating-astronaut{
-        max-width: 800px;
+        max-width: 1200px;
         margin: 0 auto;
         animation: floating 4s ease-in-out;
         animation-iteration-count: infinite;
+        padding-left: 300px;
         
     }
 
+    .collapse {
+        display: flex;
+        align-items: center;
+        
+    }
+
+    .collapse a {
+        font-size: 20px;
+        border: solid;
+    }
+
+
+    /* iPad version */
+    @media(min-device-width: 768px) and (max-width:990px) {
+
+        .floating-astronaut{
+            max-width: 820px;
+            margin: 0 auto;
+            padding-left: 90px;
+        }
+
+        .contact-form img{ 
+            padding-right: 20%;
+        }
+
+        .contact-form {
+          border: none;
+        }
+
+        .social-media {
+            border: none;
+        }
+
+        .rocket-ship {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20%;
+            margin-top: 20%;
+        }
+    }
+
+
+      /* iPhone version */
+
+      @media(min-device-width: 300px) and (max-width:767px) {
+
+        /* contact page */
+        .social-media a {
+            padding: 2px;
+            margin: 2%;
+        }
+
+        .contact-form {
+            border: none;
+          }
   
+          .social-media {
+              border: none;
+          }
+
+        .contact-form img{ 
+            display: none;
+        }
+
+        /* About page */
+        .text-lg {
+            font-size: 15px;
+            padding-top:20px ;
+        }
+      }
