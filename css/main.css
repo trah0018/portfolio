@@ -89,6 +89,10 @@ h2 {
     --bs-btn-disabled-border-color:var(--bs-primary);
 }
 
+.nav-item {
+    text-align: center;
+}
+
 main {
     color: aliceblue;
     
