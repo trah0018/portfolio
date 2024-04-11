@@ -1,53 +1,19 @@
-.carousel {
-    max-width: 500px;
-    margin: 0 auto;
-}
 
-body {
-    background-color: rgb(6, 2, 14); 
-}
+/* Adds all main colors */
 
-.banner {
-    background-image: url(../images/Purple-space.jpg);
-   
-}
-
-
-
-h2 {
-    text-align: center;
-    color: white;
-    padding-top: 100px;
-    padding-bottom:50px ;
-}
-
-.banner p{
-    padding-bottom: 50px;}
-
-   footer {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-top: 10%;
-    padding-bottom: 2%;
-   }
-   
-   footer p{ 
-    color: white;
-   }
-
-   :root{
+:root{
     --bs-primary:#3b0086;
     --bs-primary-rgb: 59, 0, 134;
     --bs-secondary: #d72483;
     --bs-secondary-rgb: 215, 36, 131;
     --bs-info: rgb(116, 114, 252); 
     --bs-info-rgb: 116, 114, 252;
-    --bs-dark: black; 
-    --bs-light:white;
+    --bs-dark: #06020e; 
+    --bs-dark: rgb(6, 2, 14);
+    --bs-light:#ffffff;
 }
 
-
-
+/* colours for buttons */
 .btn-primary {
     --bs-btn-font-weight: 600;
     --bs-btn-color: var(--bs-primary);
@@ -60,7 +26,6 @@ h2 {
     --bs-btn-disabled-bg:var(--bs-primary);
     --bs-btn-disabled-border-color:var(--bs-primary);
 }
-
 .btn-secondary {
     --bs-btn-font-weight: 600;
     --bs-btn-color: var(--bs-secondary);
@@ -73,7 +38,6 @@ h2 {
     --bs-btn-disabled-bg:var(--bs-primary);
     --bs-btn-disabled-border-color:var(--bs-primary);
 }
-
 .btn-info {
     --bs-btn-font-weight: 600;
     --bs-btn-color: var(--bs-info);
@@ -89,94 +53,31 @@ h2 {
     --bs-btn-disabled-border-color:var(--bs-primary);
 }
 
+
+.collapse a {
+    font-size: 20px;
+    border: solid;
+}
+         
+/* adds conthrax font */
+@font-face {
+    font-family: conthrax;
+    src: url(../fonts/conthrax-sb.otf);
+}
+body {
+    background-color: var(--bs-dark); 
+    font-family: conthrax;
+}
 .nav-item {
     text-align: center;
 }
 
 main {
     color: aliceblue;
-    
+
 }
 
-/* adding style to contact form */
-
-.contact-form {
-  background-image: url(../images/Purple-space.jpg);
-  max-width: 1200px;
-  margin: 0 auto;
-  border-style: solid;
-  border-color: var(--bs-info);
-}
-.contact-form {
-    padding: 2%;
-}
-
-/* adding modifications for social media */
-
-.social-media {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-top: 30px;
-    text-align: center;
-    background-image: url(../images/purple-space.jpg);
-    padding-bottom: 30px;
-    border-radius: 30px;
-}
-
-.social-media { 
-    border-style: solid;
-    border-color: var(--bs-info);
-}
-
-h3{
-    padding: 2%;
-    text-align: center;
-    padding-top: 5%;
-}
-
-/* Styling about us section */
-
-
-.text-lg {
-    font-size: 20px;
-}
-
-.rocket-ship {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20%;
-    margin-top: 20%;
-}
-
-.rocket {
-    background-image: url(../images/purple-space.jpg);
-}
-
-.about {
-    background-image: url(../images/purple-space.jpg);
-}
-
-    @keyframes flying { 
-        0%{
-            transform: translate(0,0);
-          
-        }
-    
-        50% {
-            transform: translate(-300px,-300px) rotate(460deg);
-        }
-        
-        100% {
-            transform: translate(00px,000px) rotate(360deg);
-        }
-    }    
-   
-
-.rocket-ship {
-    animation: flying 8s ease-in-out; 
-	animation-iteration-count: infinite;
-}
-
+/* adds floating animation for astronaut image  */
 @keyframes floating {
 	0% {
         transform: translateY(0);
@@ -196,55 +97,174 @@ h3{
         margin: 0 auto;
         animation: floating 4s ease-in-out;
         animation-iteration-count: infinite;
-       
-        
     }
 
-    .collapse {
-        display: flex;
-        align-items: center;
-        
-    }
+/*  adds the carousel to the center */
+.carousel {
+    max-width: 500px;
+    margin: 0 auto;
+}
 
-    .collapse a {
-        font-size: 20px;
-        border: solid;
-    }
+/* adds background image of space */
+
+.banner {
+    background-image: url(../images/Purple-space.jpg);
+}
+
+.banner p{
+    padding-bottom: 50px;}
+
+
+/* adds hamberger icon and "x" icon for nav */
+.navbar-toggler[aria-expanded="true"] .bi-list,
+.navbar-toggler[aria-expanded="false"] .bi-x-lg {
+    display: none;
+}
+.navbar-toggler[aria-expanded="true"] .bi-x-lg,
+.navbar-toggler[aria-expanded="false"] .bi-list {
+    display: inline;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    padding-top: 100px;
+    padding-bottom:50px ;
+}
+
+   /*  adds the carousel to the center */
+   .carousel {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+
+   footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 10%;
+    padding-bottom: 2%;
+   }
+   
+   footer p{ 
+    color: white;
+   }
+
+/* adds some style to contact form */
+
+.contact-form {
+  background-image: url(../images/Purple-space.jpg);
+  max-width: 1200px;
+  margin: 0 auto;
+  border-style: solid;
+  border-color: var(--bs-info);
+  padding: 2%;
+}
+
+/* adds some style for social media */
+.social-media {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 30px;
+    text-align: center;
+    background-image: url(../images/purple-space.jpg);
+    padding-bottom: 30px;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: var(--bs-info);
+}
+
+h3{
+    padding: 2%;
+    text-align: center;
+    padding-top: 5%;
+}
+
+/* Styling about us section */
+
+.text-lg {
+    font-size: 20px;
+}
+
+.rocket {
+    background-image: url(../images/purple-space.jpg);
+}
+
+
+/* adds rocket animation */
+.about {
+    background-image: url(../images/purple-space.jpg);
+}
+
+    @keyframes flying { 
+        0%{
+            transform: translate(0,0);
+          
+        }
+    
+        50% {
+            transform: translate(-300px,-300px) rotate(460deg);
+        }
+        
+        100% {
+            transform: translate(0px,0px) rotate(360deg);
+        }
+    }    
+   
+
+.rocket-ship {
+    animation: flying 8s ease-in-out; 
+	animation-iteration-count: infinite;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20%;
+    margin-top: 20%;
+}
+
+
 
 
     /* iPad version */
     @media(min-device-width: 768px) and (max-width:990px) {
 
+
+        /* keeps astronaut in the center */
         .floating-astronaut{
             max-width: 200px;
             margin: 0 auto;
       
         }
 
-        .contact-form img{ 
-            padding-right: 20%;
-        }
-
+        /* removes the border for the Ipad */
         .contact-form {
           border: none;
         }
-
         .social-media {
             border: none;
         }
 
+        /* adds better animation for ipad size */
         .rocket-ship {
-            max-width: 600px;
+            animation: flying 8s ease-in-out; 
+            animation-iteration-count: infinite;
+            max-width: 500px;
             margin: 0 auto;
             padding: 20%;
             margin-top: 20%;
         }
 
-        .carousel {
+        /* adds carousel to center for ipad */
+       .carousel {
             max-width: 250px;
             margin: 0 auto;
         }
+
     }
+
+     
+
+        
+    
 
 
       /* iPhone version */
@@ -254,12 +274,13 @@ h3{
 
         /* home page  */
 
+        /* adds astronaut to in the center for iphone */
         .floating-astronaut{
             max-width: 100px;
             margin: 0 auto;
       
         }
-
+        /* adds carousel to center for iphone */
         .carousel {
             max-width: 125px;
             margin: 0 auto;
@@ -271,32 +292,58 @@ h3{
             margin: 2%;
         }
 
+        /* adds removed border and background image for ihpone */
         .contact-form {
             border: none;
             background-image: none;
           }
-  
+
+          /* adds smaller area for social media section rather than going from side to side fo iphone */
           .social-media {
           max-width: 500px;
           margin: 0 auto;
               
           }
 
+          /* removes image */
         .contact-form img{ 
             display: none;
         }
 
         /* About page */
-        .text-lg {
-            font-size: 15px;
+
+        /* makes the font size more readable */
+        .text {
+            font-size: 13px;
             padding-top:20px ;
         }
 
+        /* adds modification to rocket animations for iphone */
+        .about {
+            background-image: url(../images/purple-space.jpg);
+        }
+        
+            @keyframes flying { 
+                0%{
+                    transform: translate(0,0);
+                  
+                }
+            
+                50% {
+                    transform: translate(-100px,-100px) rotate(-180deg);
+                }
+                
+                100% {
+                    transform: translate(0px,0px) rotate(-360deg);
+                }
+            } 
+
         .rocket-ship {
-            max-width: 50px;
+            max-width: 100px;
             margin: 0 auto;
+            animation: flying 8s ease-in-out; 
+            animation-iteration-count: infinite;
             padding: 20%;
             margin-top: 20%;
         }
-
       }

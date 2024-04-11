@@ -22,41 +22,44 @@
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous">
     </script>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-            <div class="container-xl">
-                <a class="navbar-brand " href="#home">
-                    <img src="./images/astronaut.png" alt="Logo" width="60px">
-                </a>
-                <span class="ham-menu">
+
+        <!-- adds navbar and hamberger menu -->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+                <div class="container-xl">
+                    <a class="navbar-brand " href="#home">
+                        <img src="./images/astronaut.png" alt="Logo" width="60px">
+                    </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <i class="bi bi-list"></i>
+                        <i class="bi bi-x-lg"></i>
                     </button>
-                </span>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 p-2">
-                        <li class="nav-item">
-                            <a class="active btn btn-primary ms-5 mt-5 rounded-pill p-5 pt-2 pb-2" aria-current="page"
-                                href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="btn btn-secondary ms-5 mt-5 rounded-pill p-5 pt-2 pb-2" href="about.html">About
-                                Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="btn btn-info ms-5 mt-5 rounded-pill p-5 pt-2 pb-2" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 p-2">
+                            <li class="nav-item">
+                                <a class="active btn btn-primary ms-5 mt-5 rounded-pill p-5 pt-2 pb-2"
+                                    aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn btn-secondary ms-5 mt-5 rounded-pill p-5 pt-2 pb-2"
+                                    href="about.html">About
+                                    Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn btn-info ms-5 mt-5 rounded-pill p-5 pt-2 pb-2"
+                                    href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
 
-        </nav>
+            </nav>
     </header>
     <main>
         <!-- Home section -->
-        <section class="banner py-5  text-center" id="home">
+        <section class="banner py-5  text-center" id="home" aria-labelledby="banner-heading">
             <div class="container-xl bg-black text-white bg-opacity-10 p-5">
                 <h1 class="display-1 pt-4">Welcome to my Portfolio</h1>
                 <h2>Anthony Trahan</h2>
@@ -64,7 +67,9 @@
             </div>
         </section>
 
-        <div class="floating-astronaut">
+
+        <!-- adds image of floating astronaut -->
+        <div class="floating-astronaut" role="img" aria-label="Floating Astronaut">
             <picture>
                 <source srcset="images/floating-astronaut-400_x_500.png" media="(min-width:990px)">
                 <source srcset="images/floating-astronaut-200_x_250.png" media="(min-width:768px)" />
@@ -75,7 +80,8 @@
 
         <h2>Preview Some of my Work</h2>
 
-        <div id="carouselExampleIndicators" class="carousel slide">
+        <!-- adds a carousel of my work -->
+        <div id="carouselExampleIndicators" class="carousel slide" role="region" aria-label="Carousel of Work">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -123,6 +129,7 @@
         </div>
 
 
+        <!-- adds footer -->
         <footer role="contentinfo">
 
             <div class="container text-center">
