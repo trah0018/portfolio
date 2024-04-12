@@ -79,6 +79,10 @@ main {
 
 }
 
+header {
+    background-color: var(--bs-dark);
+}
+
 /* adds floating animation for astronaut image  */
 @keyframes floating {
     0% {
