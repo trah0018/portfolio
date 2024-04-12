@@ -1,3 +1,13 @@
+/* adds styling to skip-link */
+
+.skip-link {
+    color: var(--bs-dark);
+}
+
+.skip-link:focus {
+    color: aliceblue;
+}
+
 /* Adds all main colors */
 /* Had to change the contact button colors due to contrast */
 :root {
