@@ -200,7 +200,7 @@ h3 {
 
 /* Styling about us section */
 
-.text-lg {
+.text-lg { 
     font-size: 20px;
 }
 
@@ -367,3 +367,6 @@ h3 {
         margin-top: 20%;
     }
 }
+
+
+
