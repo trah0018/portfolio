@@ -36,6 +36,21 @@
     --bs-btn-disabled-border-color: var(--bs-primary);
 }
 
+.btn-outline-primary {
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: var(--bs-info);
+    --bs-btn-hover-color: var(--bs-light);
+    --bs-btn-bg: ;
+    --bs-btn-border-color: var(--bs-info);
+    --bs-btn-hover-bg: var(--bs-info);
+    --bs-btn-hover-border-color: var(--bs-light);
+    --bs-btn-active-bg: var(--bs-info);
+    --bs-btn-active-border-color: var(--bs-light)e;
+    --bs-btn-active-color: var(--bs-light);
+    --bs-btn-disabled-bg: var(--bs-primary);
+    --bs-btn-disabled-border-color: var(--bs-primary);
+}
+
 .btn-secondary {
     --bs-btn-font-weight: 600;
     --bs-btn-color: var(--bs-secondary);
