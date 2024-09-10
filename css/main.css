@@ -196,6 +196,7 @@ h3 {
     padding: 2%;
     text-align: center;
     padding-top: 5%;
+
 }
 
 /* Styling about us section */
@@ -237,6 +238,58 @@ h3 {
     margin: 0 auto;
     padding: 20%;
     margin-top: 20%;
+}
+
+
+/* Projects */
+
+.card-text {
+    color: #ffffff;
+}
+
+
+.projects h3 {
+    color: #ffffff;
+}
+
+.projects {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 15px;
+}
+
+.projects li {
+    color: #ffffff;
+    text-align: start;
+    padding-bottom: 2%;
+    font-size: 15px;
+}
+
+.card {
+    border: 15px solid;
+
+    padding: 10px;
+    background-color:#B8AFFF ;
+    
+}
+
+.card p {
+    color: white;
+}
+
+.card a {
+    color: #000;
+}
+
+.card h3 {
+    color: #ffffff;
+}
+
+h4 {
+  text-align: center;
+    color: #ffffff;
+    padding: 5%;
+    font-size: 40px;
 }
 
 
