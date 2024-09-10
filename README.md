@@ -28,7 +28,7 @@ There were not many differences made between the Figma prototype and the actual 
 [contrax](https://www.dafont.com/)
 
 **Images**
-[Modified from:](https://unsplash.com/s/photos/blue-space)
+[Used and Modified from:](https://unsplash.com/s/photos/blue-space)
 
 **Figma Protototype:**
 

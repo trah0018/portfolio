@@ -230,6 +230,7 @@ h3 {
     background-image: url(../images/purple-space.jpg);
 }
 
+
 @keyframes flying {
     0% {
         transform: translate(0, 0);
